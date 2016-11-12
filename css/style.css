@@ -1,0 +1,44 @@
+h1 > img {
+    width: 100%;
+    max-width: 659px;
+}
+
+.header h3 {
+    color: #666;
+}
+
+td {
+    text-align: left;
+}
+
+.keynote {
+    padding: 50px 0;
+}
+
+.keynote-image {
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .keynote-image {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+.keynote-image > img {
+    border: 1px solid #fff;
+}
+
+.keynote-desc {
+    text-align: left;
+}
+
+.keynote-name {
+    margin: 0;
+    color: #fff;
+}
+
+.program {
+    padding: 50px 0;
+}

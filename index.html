@@ -28,6 +28,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -38,22 +40,19 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>HOME</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="#about" onclick=$("#menu-close").click();>概要</a>
             </li>
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
+                <a href="#keynote" onclick=$("#menu-close").click();>キーノート</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="#program" onclick=$("#menu-close").click();>プログラム</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#map" onclick=$("#menu-close").click();>マップ</a>
             </li>
         </ul>
     </nav>
@@ -62,10 +61,11 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <!-- <h1>PyCon mini Kumamoto</h1> -->
-            <h1><img src="img/kumamoto.png"></h1>
-            <h3>テーマ : 未来</h3>
+            <h1><img src="img/kumamoto.png" alt="PyCon mini Kumamoto"></h1>
+            <h3>第1回 テーマ「 未来 」</h3>
             <br>
-            <a href="#" class="btn btn-dark btn-lg">参加申込み</a>
+            <a href="#" class="btn btn-warning">発表申込み</a>
+            <a href="#" class="btn btn-warning">参加申込み</a>
         </div>
     </header>
 
@@ -74,8 +74,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2></h2>
-                    <p class="lead"></p>
+                    <h2>概要</h2>
+                    <hr class="small">
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
             </div>
             <!-- /.row -->
@@ -85,64 +88,19 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="keynote" class="keynote bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>キーノート</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                    <div class="col-sm-4 keynote-image">
+                        <img src="https://pycon.jp/2016/site_media/media/speaker_photos/headshot1_512x512.jpg.128x128_q85.jpg">
+                    </div>
+                        <div class="col-sm-6 keynote-desc">
+                            <h3 class="keynote-name">Ian Lewis</h3>
+                            <p>Ian Lewis is a Developer Advocate working for Google on the Google Cloud Platform Team in Tokyo, Japan. Ian focuses on Kubernetes, Go, Python, but touches almost every part of the cloud, from Big Data, to Networking, to Machine Learning. Ian is a founder of PyCon JP, the largest Python event in Japan.</p>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
@@ -154,52 +112,81 @@
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
-
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="program" class="program">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>プログラム</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>時間</th>
+                                <th>大ホール</th>
+                                <th>教室</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:00 - 10:15</td>
+                                <td>オープニング</td>
+                                <td> – </td>
+                            </tr>
+                            <tr>
+                                <td>10:15 - 11:00</td>
+                                <td>キーノート<br>Ian Lewis<br>概要</td>
+                                <td> – </td>
+                            </tr>
+                            <tr>
+                                <td>11:10 - 11:40</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>11:40 - 12:10</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>12:20 - 13:30</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>13:30 - 14:00</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>14:10 - 14:40</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>14:50 - 15:20</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                                <td>トークタイトル（レベル）<br>発表者名<br>概要</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 15:40</td>
+                                <td>記念撮影</td>
+                                <td> – </td>
+                            </tr>
+                            <tr>
+                                <td>15:45 - 16:15</td>
+                                <td>LT 1枠5分x5枠<br>当日、受付にて募集します。</td>
+                                <td> – </td>
+                            </tr>
+                            <tr>
+                                <td>16:15 - 16:30</td>
+                                <td>クロージング</td>
+                                <td> – </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -213,22 +200,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                <h3>ご参加お待ちしています！</h3>
                 </div>
             </div>
         </div>
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
+    <section id="map" class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.218251704886!2d130.72533095115458!3d32.81298168086791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f15846ba4a79%3A0x6c3153aa3987658e!2z5bel5a2m6YOoMuWPt-mkqA!5e0!3m2!1sen!2sjp!4v1478961888020" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
     <!-- Footer -->
@@ -236,15 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
+                    <h4><strong>PyCon mini Kumamoto</strong></h4>
                     <br>
                     <ul class="list-inline">
                         <li>
@@ -254,11 +226,13 @@
                             <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-slack fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                    </p>
                 </div>
             </div>
         </div>
