@@ -7,6 +7,10 @@ h1 > img {
     color: #666;
 }
 
+.buttons a {
+    display: inline-block;
+}
+
 td {
     text-align: left;
 }
