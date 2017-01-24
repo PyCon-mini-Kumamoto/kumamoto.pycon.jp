@@ -442,18 +442,15 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>ゴールド</h2>
                     <hr class="small">
-                    <div class="row">
-                        スポンサーバナー掲載箇所<br><br>
+                    <div class="row" id="sponsor_gold">
                     </div>
                     <h2>シルバー</h2>
                     <hr class="small">
-                    <div class="row">
-                        スポンサーバナー掲載箇所<br><br>
+                    <div class="row" id="sponsor_silver">
                     </div>
                     <h2>ブロンズ</h2>
                     <hr class="small">
-                    <div class="row">
-                        スポンサーバナー掲載箇所<br><br>
+                    <div class="row" id="sponsor_bronze">
                     </div>
                 </div>
                 <!-- /.col-lg-10 -->
@@ -567,6 +564,30 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+    </script>
+    
+    <!-- Banner -->
+    <script src="js/banners.js"></script>
+    <script>
+        
+        var plans = {
+            gold  : document.getElementById( 'sponsor_gold' ),
+            silver: document.getElementById( 'sponsor_silver' ),
+            bronze: document.getElementById( 'sponsor_bronze' )
+        };
+        
+        function createBanner( sponsor ){
+            return '<a href="' + sponsor.url + '">' + 
+                   '<img src="' + bannerBaseUrl + sponsor.src + '">' +
+                   '</a><br>';
+        }
+        
+        var sponsor;
+        for( var name in banners ){
+            sponsor = banners[name];
+            plans[sponsor.plan].innerHTML += createBanner( sponsor );
+        }
+        
     </script>
 
 </body>
