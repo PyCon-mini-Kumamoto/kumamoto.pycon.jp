@@ -27,4 +27,10 @@ var banners = {
         plan: 'bronze'
     },
     
+    'Retty株式会社': {
+        url : 'http://corp.retty.me/',
+        src : 'logo.png',
+        plan: 'gold'
+    }
+    
 };
