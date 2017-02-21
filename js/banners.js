@@ -20,17 +20,23 @@ var banners = {
         plan: 'bronze'
     },
     
+    'Retty株式会社': {
+        url : 'http://corp.retty.me/',
+        src : 'logo.png',
+        plan: 'gold'
+    },
+    
+    'ワイアーチ': {
+        url: 'http://yarch.jp/',
+        src: 'yarch.png.150x80_q85.png',
+        plan: 'bronze'
+    },
+    
     // バナーリンク URL が画像のためひとまず公式サイトをリンクとしておく
     '株式会社XOXZO': {
         url : 'https://www.xoxzo.com/ja/',
         src : 'xoxzo_logot02.png',
         plan: 'bronze'
-    },
-    
-    'Retty株式会社': {
-        url : 'http://corp.retty.me/',
-        src : 'logo.png',
-        plan: 'gold'
     }
     
 };
