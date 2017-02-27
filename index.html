@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <meta property="og:title" content="PyCon mini Kumamoto 2017" />
     <meta property="og:url" content="http://kumamoto.pycon.jp/" />
     <meta property="og:image" content="http://kumamoto.pycon.jp/img/kumamoto.png" />
@@ -253,9 +253,9 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>時間</th>
-                                <th>大ホール</th>
-                                <th>教室</th>
+                                <th class="th1">時間</th>
+                                <th class="th2">大ホール</th>
+                                <th class="th3">教室</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -271,18 +271,33 @@
                             </tr>
                             <tr>
                                 <td>10:15 - 11:00</td>
-                                <td>キーノート<br>Ian Lewis<br>概要</td>
+                                <td><span class='title'>キーノート</span><br>Ian Lewis<br>概要</td>
                                 <td> – </td>
                             </tr>
                             <tr>
                                 <td>11:10 - 11:40</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
+                                <td><span class='title'>まだ見ぬバグゼロという未来(初級)</span><br>新井 正貴<br>
+                                    1.SQUEEZEの過去(テストを書く文化がない/バグ修正が新たなバグを生む/and more)<br>
+                                    2.取り組んだ施策<br>
+                                    3.SQUEEZEの現在<br>
+                                    4.バグゼロに向けて残っている課題<br>
+                                    5.まとめ<br>
+                                    <a href="http://qiita.com/massa142/private/09ce7a7c7a5c92efc4a7">スライド</a><br>
+                                </td>
+                                <td><span class='title'>kivyの利便性や有用性(初級)</span><br>齋藤 大輔<br>
+                                    KivyはGUIやNUIを開発するためのライブラリーである。<br>
+                                    本プロポーザルは、当該ライブラリーの基本的な使い方を中心に解説し、<br>
+                                    メリットやデメリットについても触れたいと思う。<br>
+                                    加えて、日本におけるKivy中心のコミュニティ活動についても取り上げる。<br>
+                                </td>
                             </tr>
                             <tr>
                                 <td>11:40 - 12:10</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
+                                <td><span class='title'>PythonとBI基盤ではじめるPyData入門〜福岡ソフトバンクホークスを添えて(初級)</span><br>Shinichi Nakagawa(野球の人)<br>
+                                    目的とデータに合わせたPythonの使い方<br>
+                                    2017年の福岡ソフトバンクホークスはどれほど強いのか<br>
+                                </td>
+                                <td><span class='title'>DjangoのDB migrationがどういうしくみで動いているか(初級)</span><br>野中 哲<br> - </td>
                             </tr>
                             <tr>
                                 <td>12:20 - 13:50</td>
@@ -290,18 +305,49 @@
                             </tr>
                             <tr>
                                 <td>14:00 - 14:30</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
+                                <td><span class='title'>すぐ始められる、Pythonの環境構築(初級)</span><br>寺田 学<br>
+                                    Pythonを学習したり、システムに組み込んだりする際の環境構築のベストプラクティスを紹介します。
+                                </td>
+                                <td><span class='title'>ボイスインターフェースの現状(仮)と、pythonを使ったフレームワーク(flask)でAmazon Echoがレスポンスを返すまで。</span><br>
+                                    堀田 直孝<br>
+                                    ボイスインターフェースの現状(仮)と、pythonを使ったフレームワーク(flask)でAmazon Echoがレスポンスを返すまで。
+                                </td>
                             </tr>
                             <tr>
                                 <td>14:40 - 15:10</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
+                                <td><span class='title'>Pythonでできる数理最適化（仮）(中級)</span><br>岩永 二郎<br>
+                                    ・数理最適化を伝える<br>
+                                    ・Pythonで数理最適化ができることを伝える<br>
+                                    ・次の流行りは数理最適化だ！<br>
+                                </td>
+                                <td><span class='title'>Pythonistaの使いかた</span><br>jbking<br>
+                                    OS上で動作するPython開発環境としてPythonistaというアプリがあります。<br>
+                                    これは単なるPython実行環境+エディタという枠を超え、
+                                    よく使う著名なサードパーティモジュール(numpy, requests, beautifulsoup4, bottleなど)や
+                                    iOSネイティブの機能を使うための独自モジュール(BLE, UIなど)をバンドルし、
+                                    簡単なホビーアプリやプロトタイプ作成から本格的なアプリまで書くことができます。<br>
+                                    このトークでは基本的なPythonistaの紹介から、実際に開発をするときのプラクティス、
+                                    どんなことに使えるのか具体的な使いみちの提案をします。
+                                </td>
                             </tr>
                             <tr>
                                 <td>15:20 - 15:50</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
-                                <td>トークタイトル（レベル）<br>スピーカー名<br>概要</td>
+                                <td><span class='title'>科学技術計算用言語としてのPython&Webアプリ作ろう(中級)</span><br>矢野高宏<br>
+                                    （１）科学技術計算用言語としてのPython<br>
+                                    * matlabからnumpyへ<br>
+                                    * Python+OpenCV<br>
+                                    * DeepLearningはPython<br>
+                                    * 軽くお仕事の話<br><br>
+
+                                    （２）Webアプリ作ろう<br>
+                                    * djangoとはこんなもの<br>
+                                    * 海外のdjangoの先生すごい！Pythonのコミュニティ良い<br>
+                                    * PythonWebアプリのLearningPath<br>
+                                    * 2週間でWebアプリが作れた！<br>
+                                    * プライベートでWebアプリ作ったよ<br>
+                                    * pythonやろう<br>
+                                </td>
+                                <td> - </td>
                             </tr>
                             <tr>
                                 <td>15:50 - 16:00</td>
@@ -588,29 +634,29 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
-    
+
     <!-- Banner -->
     <script src="js/banners.js"></script>
     <script>
-        
+
         var plans = {
             gold  : document.getElementById( 'sponsor_gold' ),
             silver: document.getElementById( 'sponsor_silver' ),
             bronze: document.getElementById( 'sponsor_bronze' )
         };
-        
+
         function createBanner( sponsor ){
-            return '<a href="' + sponsor.url + '">' + 
+            return '<a href="' + sponsor.url + '">' +
                    '<img src="' + bannerBaseUrl + sponsor.src + '">' +
                    '</a><br><br>';
         }
-        
+
         var sponsor;
         for( var name in banners ){
             sponsor = banners[name];
             plans[sponsor.plan].innerHTML += createBanner( sponsor );
         }
-        
+
     </script>
 
 </body>

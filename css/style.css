@@ -46,3 +46,19 @@ td {
 .program {
     padding: 50px 0;
 }
+
+.program table {
+    table-layout: fixed;
+}
+
+.program .th1 {
+    width: 13%;
+}
+
+.program .th2, .program .th3 {
+    width: 43%;
+}
+
+.title {
+    font-weight: bold;
+}
