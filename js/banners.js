@@ -32,6 +32,12 @@ var banners = {
         plan: 'bronze'
     },
     
+    '株式会社 nana music': {
+        url : 'https://nana-music.co.jp/ja/',
+        src : 'nana.png',
+        plan: 'bronze'
+    },
+    
     // バナーリンク URL が画像のためひとまず公式サイトをリンクとしておく
     '株式会社XOXZO': {
         url : 'https://www.xoxzo.com/ja/',
