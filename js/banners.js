@@ -43,6 +43,12 @@ var banners = {
         url : 'https://www.xoxzo.com/ja/',
         src : 'xoxzo_logot02.png',
         plan: 'bronze'
+    },
+    
+    'インフォテリア株式会社': {
+        url : 'https://www.infoteria.com/',
+        src : 'Infoteria_logo_300.png',
+        plan: 'gold'
     }
     
 };
