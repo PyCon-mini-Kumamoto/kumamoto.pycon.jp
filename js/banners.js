@@ -49,6 +49,12 @@ var banners = {
         url : 'https://www.infoteria.com/',
         src : 'Infoteria_logo_300.png',
         plan: 'gold'
+    },
+    
+    '株式会社KIS': {
+        url : 'http://www.kis.co.jp/',
+        src : 'KIS.JPG',
+        plan: 'bronze'
     }
     
 };
